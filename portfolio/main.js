@@ -1,30 +1,45 @@
-const dynamicspan = document.querySelector("#dynamic-text")
-
-const textArray = ["Developer"]
-const text = textArray[0]
-let content = ""
-let index = 0
-
-function handleDelete(c,text){
-    if(index == -1){
+function handleDelete(){
+    if(index == -1){   
+        index = 0
+        arrayIdx++;
+        iterateOverArray()
+        console.log("Inside if")
         return
     }
     index--;
-    c = c.substring(0,index -1)
-    dynamicspan.textContent = c
-    setTimeout(handleDelete,500,c,text)
+    content = content.substring(0,index -1)
+    dynamicspan.textContent = content
+    setTimeout(handleDelete,200)
 }
 
-function handlePrint(c,text){
+function handlePrint(text){
     if(index == text.length){
-        handleDelete(c,text)
+        handleDelete(text)
         return
     }
-    c += text[index]
-    dynamicspan.textContent = c
+    content += text[index]
+    dynamicspan.textContent = content
     index++
-    setTimeout(handlePrint,500,c,text)
+    setTimeout(handlePrint,200,text)
 }
 
-handlePrint(content,text)
+function iterateOverArray(){
+    if(arrayIdx == phrases.length){
+        arrayIdx = 0
+    }
+    let text = phrases[arrayIdx]
+    handlePrint(text)
+}
+
+const dynamicspan = document.querySelector("#dynamic-text")
+
+const phrases = ["I am a Web Developer...","I am pursuing B.Tech..."]
+let content = ""
+let index = 0
+let arrayIdx = 0
+
+iterateOverArray()
+
+
+
 

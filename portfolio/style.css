@@ -18,6 +18,14 @@
     width: 2rem;
     padding-right: 1rem;
 }
+
+#dynamic-text{
+    background-color: white;
+    height: 3rem;
+    width: 50%;
+    display: block;
+    margin: 3rem auto;
+}
 .section{
     background-color: #FFDCA9;
     margin: 1rem;
