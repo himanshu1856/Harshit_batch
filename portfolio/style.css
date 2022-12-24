@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 #profile-img{
     height: 20rem;
@@ -9,8 +10,10 @@
     border-radius: 10rem;
 }
 #intro{
+    font-family: 'Unbounded', cursive;
     background-color:#97DECE ;
     text-align: center;
+    height: 100vh;
 }
 #intro > a >img{
     margin-top: 1rem;
@@ -32,6 +35,7 @@
     padding: 1rem;
     border-radius: 1rem;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .section ul{
@@ -59,5 +63,16 @@ form > *{
     margin: .5rem;
 }
 
+#navbar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
 
 
