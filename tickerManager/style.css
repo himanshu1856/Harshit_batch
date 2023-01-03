@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5f5f87;
+}
+
+.header {
+    background-color: gray;
+    height: 10vh;
+    /* padding: 1rem; */
+    margin: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+.ticket-filters {
+    /* background-color: #505047; */
+    height: 3rem;
+    width: 14rem;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.filter {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform .5s;
+    opacity: .5;
+    margin: 5px;
+}
+
+.filter:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.ticket-actions {
+    height: 3rem;
+    width: 6rem;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ticket-actions i {
+    transition: transform .5s;
+}
+
+.ticket-actions i:hover {
+    transform: scale(1.3);
+}
+
+.open-modal {
+}
+
+.close-modal {
+}
+
+.ticket-container {
+    background-color: #e0e0d5;
+    height: 75vh;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.ticket-modal {
+    height: 12rem;
+    background: gray;
+    width: 20rem;
+    position: absolute;
+    top: 17rem;
+    left: calc(100% - 60%);
+    display: flex;
+}
+
+.ticket-text {
+    background-color: white;
+    width: 75%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.ticket-f {
+    background-color: #9d9db7;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.f {
+    height: 2rem;
+    width: 4rem;
+}

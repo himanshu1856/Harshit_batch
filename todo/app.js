@@ -31,7 +31,7 @@ function createTodoItem(text){
     btnTag.classList.add('delete-todo')
     btnTag.textContent = 'Delete'
     btnTag.addEventListener('click',(e)=>{
-        console.log(e)
+        e.target.parentNode.remove()
     })
 
     todoDiv.appendChild(pTag)
